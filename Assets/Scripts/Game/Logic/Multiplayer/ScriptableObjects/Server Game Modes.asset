@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f357f2ca73832429cf004c84b5b4a7, type: 3}
+  m_Name: Server Game Modes
+  m_EditorClassIdentifier: 
+  serverGameModes:
+  - gameModeName: 0
+    gameModeScript: {fileID: 2404843884942544643, guid: 05dd36b4937ea8542a05497c00ab2d5c,
+      type: 3}
+    spawnUIPrefab: {fileID: 6483552784579535313, guid: e285ac582989ffe4cbeb667ae6f3b867,
+      type: 3}
+    scoreboardPrefab: {fileID: 4058143006428218199, guid: 899f504a12d59fe43946f1cce63f3409,
+      type: 3}
+  - gameModeName: 1
+    gameModeScript: {fileID: 3445826929662695322, guid: db4c49967a8826c41a177f75d6bc9ef2,
+      type: 3}
+    spawnUIPrefab: {fileID: 1834426571371986303, guid: 42a8020509aa1f14b9a15dffacebf8e6,
+      type: 3}
+    scoreboardPrefab: {fileID: 7389808233689747395, guid: 4968f3a967d5caf4eae7d8dbb29494c4,
+      type: 3}

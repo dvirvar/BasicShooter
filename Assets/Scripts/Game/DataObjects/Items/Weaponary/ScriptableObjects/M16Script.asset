@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d6a292206d654478330a368a424e05, type: 3}
+  m_Name: M16Script
+  m_EditorClassIdentifier: 
+  id: 0
+  bullets: 125
+  magazineCapacity: 25
+  firePower: 400
+  fireRate: 0.15
+  reloadSpeed: 1.3
+  recoil: 5
+  damage: 20
+  weaponModes: 000000000100000002000000
+  bulletID: 0
+  fireSound: {fileID: 8300000, guid: 09bc1ccbed0922b45b811972b50b2d8a, type: 3}
+  reloadSound: {fileID: 0}

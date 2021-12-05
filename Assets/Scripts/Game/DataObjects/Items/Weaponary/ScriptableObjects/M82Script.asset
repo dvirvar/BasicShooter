@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d6a292206d654478330a368a424e05, type: 3}
+  m_Name: M82Script
+  m_EditorClassIdentifier: 
+  id: 1
+  bullets: 50
+  magazineCapacity: 10
+  firePower: 800
+  fireRate: 0.5
+  reloadSpeed: 2
+  recoil: 15
+  damage: 60
+  weaponModes: 02000000
+  bulletPrefab: {fileID: 1885000033852751886, guid: 58f4124cadcd73f40a35f5673a0da284,
+    type: 3}
+  fireSound: {fileID: 8300000, guid: 596e73297765f8b47911f70e86911a67, type: 3}
+  reloadSound: {fileID: 0}

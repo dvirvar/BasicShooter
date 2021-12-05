@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2281425ba6a92419371560f79ea47e, type: 3}
+  m_Name: WeaponsPrefabs
+  m_EditorClassIdentifier: 
+  weaponsPrefabs:
+  - weaponID: 1
+    weaponStats: {fileID: 11400000, guid: 3f5b9cba177ef64418bdf164382b04f5, type: 2}
+    singleplayerPrefab: {fileID: 2477249495627522725, guid: 8246d0776814107498cf9248e0da0974,
+      type: 3}
+    multiplayerPrefab: {fileID: 434995716003473702, guid: 3d1c91ccdf2e1a444925f82ff407d3cd,
+      type: 3}
+    customizablePrefab: {fileID: 6870580241434619005, guid: 5297108b94e73df4faf3ba19f95b6531,
+      type: 3}
+  - weaponID: 0
+    weaponStats: {fileID: 11400000, guid: 9cf4e390114f4b44e889bc9099981a1f, type: 2}
+    singleplayerPrefab: {fileID: 3216776317846860399, guid: 8027fced9cbeaae468ba2012416a9af4,
+      type: 3}
+    multiplayerPrefab: {fileID: 1614578435036502274, guid: 30ecb9280a35c614584a6d97898ac26b,
+      type: 3}
+    customizablePrefab: {fileID: 6653753271357303291, guid: 8c1b8e00a4e31b0439982d05d67533c7,
+      type: 3}
+  - weaponID: 2
+    weaponStats: {fileID: 11400000, guid: bea18d915cd502e498c0a37b95f3dd74, type: 2}
+    singleplayerPrefab: {fileID: 1466959334592155487, guid: 47bce0e4cf8160d4ea94c12c83b08fa1,
+      type: 3}
+    multiplayerPrefab: {fileID: 5905951746025893439, guid: 53befd61c55471842be4c1537b2a9213,
+      type: 3}
+    customizablePrefab: {fileID: 1273852081537984660, guid: 798bdeaac3fc05048a4602057d68172f,
+      type: 3}
+  - weaponID: 3
+    weaponStats: {fileID: 11400000, guid: a1891e361caeaa04689d1eeebf097853, type: 2}
+    singleplayerPrefab: {fileID: 1093721121464598633, guid: affcc2ecb9d9bb5469a5d7c3297da153,
+      type: 3}
+    multiplayerPrefab: {fileID: 1093721121464598633, guid: d4fd0adcd3bb58a45b26dac1892180a4,
+      type: 3}
+    customizablePrefab: {fileID: 1093721121464598633, guid: 2dbf7c16e8206214db9fb10203638605,
+      type: 3}
+  - weaponID: 4
+    weaponStats: {fileID: 11400000, guid: c5c77f1e6b9c0ca4587f58c64ceb90f0, type: 2}
+    singleplayerPrefab: {fileID: 3418420990817160890, guid: 580844c754a306841901419ed09623bb,
+      type: 3}
+    multiplayerPrefab: {fileID: 2730406985908263789, guid: 4541583abaab4864c8d6b358ef344609,
+      type: 3}
+    customizablePrefab: {fileID: 1616121817954260733, guid: f4fbdc91a6ee44144a29f99cb62eee84,
+      type: 3}
+  - weaponID: 5
+    weaponStats: {fileID: 11400000, guid: 66078fafe1052794389f270d214a52ae, type: 2}
+    singleplayerPrefab: {fileID: 6775180619626661235, guid: 3e889e001cc44a64d8aa3f4ca5872a08,
+      type: 3}
+    multiplayerPrefab: {fileID: 536965525597013107, guid: 124c36e7438ad0a43b4bd06fa676029a,
+      type: 3}
+    customizablePrefab: {fileID: 6715927402934981983, guid: 960f1318559350544b1eaf264f0b8e24,
+      type: 3}
+  - weaponID: 6
+    weaponStats: {fileID: 11400000, guid: 44bd00dccdd1bb34fa9ab72c7994200e, type: 2}
+    singleplayerPrefab: {fileID: 4720303961368017005, guid: 8ffddb01d160c7e4a92a771d2975cbac,
+      type: 3}
+    multiplayerPrefab: {fileID: 4131030161111000089, guid: 91e6d477d97c199469488c36a4836a7a,
+      type: 3}
+    customizablePrefab: {fileID: 3450485960353438209, guid: 689499528ff414d4ca9f71e8744457ad,
+      type: 3}
+  - weaponID: 7
+    weaponStats: {fileID: 11400000, guid: d5afc8aaa7dcdc844b8c7c7bbcb77b83, type: 2}
+    singleplayerPrefab: {fileID: 7755629677593518311, guid: c04eb4220272f8247a459ccf0f0585a2,
+      type: 3}
+    multiplayerPrefab: {fileID: 1586086954153514476, guid: a5c2c4c1861b2e741900d64d0a288ffb,
+      type: 3}
+    customizablePrefab: {fileID: 244688318506166859, guid: 137c4e792c09c2444b323fedc10d5fba,
+      type: 3}
