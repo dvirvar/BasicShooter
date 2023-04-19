@@ -30,6 +30,7 @@ public class MainMenuVC : ViewController
 
     public void logoutPressed()
     {
+        FindObjectOfType<AudioHandler>().stopBgAudio();
         User.currentUser().reset();
         FindObjectOfType<SocketHandler>().Close();
         SceneManager.LoadSceneAsync("Credentials");

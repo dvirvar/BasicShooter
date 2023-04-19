@@ -13,7 +13,7 @@ public class UsersService: BasicService
 
     public IEnumerator login(string username, string password, System.Action<LoginResponse> callBack)
     {
-        string encyptedUsername = EncryptionTool.encryptString(username.ToLower());
+        string encyptedUsername = username.ToLower();
         string encyptedPassword = EncryptionTool.encryptString(password.ToLower());
         LoginData loginData = new LoginData(encyptedUsername, encyptedPassword);
         yield return serverRequests.login(loginData, (response) =>
@@ -30,12 +30,11 @@ public class UsersService: BasicService
 
     public IEnumerator register(string username, string password, System.Action<RegisterResponse> callBack)
     {
-        string encyptedUsername = EncryptionTool.encryptString(username.ToLower());
+        string encyptedUsername = username.ToLower();
         string encyptedPassword = EncryptionTool.encryptString(password.ToLower());
         RegisterData registerData = new RegisterData(encyptedUsername, encyptedPassword);
         yield return serverRequests.register(registerData, (response) =>
         {
-            
             callBack(response);
         });
     }
