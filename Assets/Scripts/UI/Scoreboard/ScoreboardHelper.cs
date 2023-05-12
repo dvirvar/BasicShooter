@@ -189,8 +189,8 @@ public class ScoreboardHelper
     public int scoreboardsCount() =>
         scoreboardType switch
         {
-            ScoreboardType.Points => pointsScoreboards.Count(),
-            ScoreboardType.Level => levelScoreboards.Count(),
+            ScoreboardType.Points => pointsScoreboards.Length,
+            ScoreboardType.Level => levelScoreboards.Length,
             _ => throw new NotImplementedException(),
         };
 }

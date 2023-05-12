@@ -105,6 +105,7 @@ public class NetworkGameManager : MonoBehaviour
             preGame.gameObject.SetActive(false);
             inGame.gameObject.SetActive(false);
             postGame.gameObject.SetActive(true);
+            showCursor();
             ResetGameLogic();
             postGame.init(worldState, timeout);
         } catch (Exception e)
@@ -225,10 +226,16 @@ public class NetworkGameManager : MonoBehaviour
     private void SocketHandler_OnLatency(JSONObject obj)
     {
         var id = obj["id"].str;
-        scoreboardManager.setPing(id, (int)obj["latency"].n);
-        if (id.Equals(User.currentUser().id))
+        try
         {
-            Invoke("getLatency", 10);
+            scoreboardManager.setPing(id, (int)obj["latency"].n);
+            if (id.Equals(User.currentUser().id))
+            {
+                Invoke("getLatency", 10);
+            }
+        } catch (Exception e)
+        {
+            print(e.ToString());
         }
     }
 

@@ -11,12 +11,19 @@ public class GameSizeFilter : Filter<GameSizeFilterType, GameSizeFilterRow>
         }
         return serversInfo.FindAll(serverInfo =>
         {
+            var maxPlayers = serverInfo.maxPlayers;
             foreach (GameSizeFilterType gameSizeFilterType in selectedTypes)
             {
-                if ((int)gameSizeFilterType >= serverInfo.maxPlayers && ((int)gameSizeFilterType-4) <= serverInfo.maxPlayers)
+                return gameSizeFilterType switch
                 {
-                    return true;
-                }
+                    GameSizeFilterType.TwoToSix => maxPlayers >= 2 && maxPlayers <= 6,
+                    GameSizeFilterType.SevenToTwelve => maxPlayers >= 6 && maxPlayers <= 12,
+                    GameSizeFilterType.ThirteenToEighteen => maxPlayers >= 13 && maxPlayers <= 18,
+                    GameSizeFilterType.ninteenToTwentyFour => maxPlayers >= 19 && maxPlayers <= 24,
+                    GameSizeFilterType.TwentyFourToTwentyEight => maxPlayers >= 25 && maxPlayers <= 28,
+                    GameSizeFilterType.TwentyNineToThirtyTwo => maxPlayers >= 29 && maxPlayers <= 32,
+                    _ => throw new System.NotImplementedException()
+                };
             }
             return false;
         });
@@ -27,9 +34,15 @@ public enum GameSizeFilterType
 {
     //Have to be a 4 difference between two numbers in the description
     [Description("2-6")]
-    TwoTOSix = 6,
-    [Description("8-12")]
-    EightTOTwelve = 12,
-    [Description("13-17")]
-    ThirteenTOSeventeen = 17,
+    TwoToSix,
+    [Description("7-12")]
+    SevenToTwelve,
+    [Description("13-18")]
+    ThirteenToEighteen,
+    [Description("19-24")]
+    ninteenToTwentyFour,
+    [Description("25-28")]
+    TwentyFourToTwentyEight,
+    [Description("29-32")]
+    TwentyNineToThirtyTwo
 }

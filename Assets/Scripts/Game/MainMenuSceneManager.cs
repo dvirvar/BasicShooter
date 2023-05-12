@@ -27,7 +27,7 @@ public class MainMenuSceneManager : MonoBehaviour
                     pingText.text = $"Ping: {response.parsedResponse.latency}";
                 }
                 Invoke("getLatency", 10);
-            }catch(MissingReferenceException e)
+            }catch (MissingReferenceException)
             {
                 CancelInvoke();
             }

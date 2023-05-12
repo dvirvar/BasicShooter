@@ -39,6 +39,7 @@ public class PointsScoreboardTableView : SortedTableView<PlayerPointsScoreboardI
             if (item.info.id.Equals(id))
             {
                 item.info.kill += 1;
+                item.info.points += 100;
                 item.refreshDisplay();
                 return;
             }

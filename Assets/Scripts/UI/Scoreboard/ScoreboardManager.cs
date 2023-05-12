@@ -25,37 +25,41 @@ public class ScoreboardManager : MonoBehaviour
 
     public void setPlayers(List<PlayerScoreboardInfo> playerScoreboardInfos)
     {
-        switch (state)
+        foreach (var item in playerScoreboardInfos)
         {
-            case State.MultiButSingle:
-                foreach (var playerScoreboardInfo in playerScoreboardInfos)
-                {
-                    playerScoreboardInfo.color = colors[playerScoreboardInfo.teamID];
-                }
-                goto case State.Single;
-            case State.Single:
-                scoreboardHelper.setInfos(0, playerScoreboardInfos);
-                break;
-            case State.Regular:
-                foreach (var playerScoreboardInfo in playerScoreboardInfos)
-                {
-                    playerScoreboardInfo.color = colors[playerScoreboardInfo.teamID];
-                }
-                var scoreboardsCount = scoreboardHelper.scoreboardsCount();
-                for (int i = 0; i < scoreboardsCount; i++)
-                {
-                    List<PlayerScoreboardInfo> players = new List<PlayerScoreboardInfo>();
-                    foreach (var item in playerScoreboardInfos)
-                    {
-                        if (item.teamID == i)
-                        {
-                            players.Add(item);
-                        }
-                    }
-                    scoreboardHelper.setInfos(i, players);
-                }
-                break;
+            setPlayer(item);
         }
+        //switch (state)
+        //{
+        //    case State.MultiButSingle:
+        //        foreach (var playerScoreboardInfo in playerScoreboardInfos)
+        //        {
+        //            playerScoreboardInfo.color = colors[playerScoreboardInfo.teamID];
+        //        }
+        //        goto case State.Single;
+        //    case State.Single:
+        //        scoreboardHelper.setInfos(0, playerScoreboardInfos);
+        //        break;
+        //    case State.Regular:
+        //        foreach (var playerScoreboardInfo in playerScoreboardInfos)
+        //        {
+        //            playerScoreboardInfo.color = colors[playerScoreboardInfo.teamID];
+        //        }
+        //        var scoreboardsCount = scoreboardHelper.scoreboardsCount();
+        //        for (int i = 0; i < scoreboardsCount; i++)
+        //        {
+        //            List<PlayerScoreboardInfo> players = new List<PlayerScoreboardInfo>();
+        //            foreach (var item in playerScoreboardInfos)
+        //            {
+        //                if (item.teamID == i)
+        //                {
+        //                    players.Add(item);
+        //                }
+        //            }
+        //            scoreboardHelper.setInfos(i, players);
+        //        }
+        //        break;
+        //}
     }
 
     public void setPlayer(PlayerScoreboardInfo playerScoreboardInfo)
@@ -129,7 +133,7 @@ public class ScoreboardManager : MonoBehaviour
 
     public void setPing(string playerId, int ping)
     {
-        switch(state)
+        switch (state)
         {
             case State.Single:
             case State.MultiButSingle:
