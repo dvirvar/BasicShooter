@@ -10,6 +10,7 @@ Welcome to Donuts Shooter, a delightful and action-packed multiplayer first-pers
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Disclaimer](#disclaimer)
 - [Game Modes](#game-modes)
 - [Server Setup](#server-setup)
 - [Registration and Login](#registration-and-login)
@@ -17,7 +18,6 @@ Welcome to Donuts Shooter, a delightful and action-packed multiplayer first-pers
 - [Weapon's Stats](#weapons-stats)
 - [Main Programming Concepts](#main-programming-concepts)
 - [How to Play](#how-to-play)
-- [Contributing](#contributing)
 - [License](#license)
 - [Video Overview](#video-overview)
 - [More Images](#more-images)
@@ -25,6 +25,11 @@ Welcome to Donuts Shooter, a delightful and action-packed multiplayer first-pers
 ## Introduction
 
 Donuts Shooter is a unique and entertaining multiplayer FPS game where players take on the role of adorable donuts. Engage in intense battles with your friends or other players in two exciting game modes: "Gun-Master" and "Deathmatch." Show off your shooting skills, level up your arsenal, and dominate the battlefield.
+
+## Disclaimer
+
+Please note that Donuts Shooter was an experimental project created to experience the challenges of developing a 3D FPS game. As a result, some features may not be fully functional, and the game may not be entirely stable.<br/>
+In addition to that, the game server hosted on Heroku has been canceled. Consequently, the game is no longer playable in an online multiplayer environment - While the game can still be explored in the Unity editor for its mechanics and gameplay, the online multiplayer functionality is no longer available.
 
 ## Game Modes
 
@@ -40,9 +45,15 @@ Deathmatch mode allows you to use your predefined customized loadouts to elimina
 
 Anyone can host a server with either of the game modes and configure the number of teams and map selection. The individual who creates the server becomes the admin, and anyone can join that server to participate in thrilling donut battles.
 
+### Choose Your Game Mode
+
+1. **Gun-Master Mode**: Customize the order of weapon acquisition! Decide which weapons players get first and the sequence in which they progress through the arsenal as they earn kills.
+
+2. **Deathmatch Mode**: Define the rules for your Deathmatch server! Adjust various parameters such as max-players count, map, and team sizes to create intense battles with your preferred loadouts.
+
 ## Registration and Login
 
-To enhance your gaming experience, Donuts Shooter features a registration and login system. Create an account to keep track of your progress, stats, and achievements. Never lose your hard-earned donut customization and loadouts again!
+Donuts Shooter features a registration and login system. Create an account to never lose your donut customization and loadouts again!
 
 ## Customization
 
@@ -50,7 +61,7 @@ Express your creativity and style by customizing your donut's colors and your pl
 
 ## Weapon's Stats
 
-Strategic decision-making is vital in Donuts Shooter, and that's why we've implemented a comprehensive weapon's stats system. Compare various weapons, such as fire rate, accuracy, and more, to choose the perfect loadout that suits your playstyle.
+Strategic decision-making is vital in Donuts Shooter, and that's why we've implemented a comprehensive weapon's stats system. Compare various weapons, such as fire rate, fire power, reload speed, and more, to choose the perfect loadout that suits your playstyle.
 
 ## Main Programming Concepts
 
@@ -67,10 +78,6 @@ Donuts Shooter incorporates some key programming concepts to ensure a smooth and
 - Join an existing server or create your own and invite friends to play.
 - Use WASD to move, mouse to aim, and left-click to shoot.
 - Work with your team, strategize, and achieve victory.
-
-## Contributing
-
-We welcome contributions to Donuts Shooter! If you find any bugs, have suggestions, or want to add new features, please create a pull request. We'll review it and merge it if deemed appropriate.
 
 ## License
 
