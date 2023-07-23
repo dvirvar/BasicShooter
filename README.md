@@ -5,6 +5,8 @@
 
 Welcome to Donuts Shooter, a delightful and action-packed multiplayer first-person shooter game developed in Unity 3D. In this game, you'll step into the world of donuts and engage in epic battles with your friends or other players online. Customize your donut, select your weapons, and get ready for some sugary mayhem!
 
+**Created by Dvir Vardi and Guy Madmon**
+
 ## Table of Contents
 
 - [Introduction](#introduction)
