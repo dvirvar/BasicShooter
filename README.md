@@ -14,7 +14,6 @@ Welcome to Donuts Shooter, a delightful and action-packed multiplayer first-pers
 - [Customization](#customization)
 - [Weapon's Stats](#weapons-stats)
 - [Main Programming Concepts](#main-programming-concepts)
-- [Installation](#installation)
 - [How to Play](#how-to-play)
 - [Contributing](#contributing)
 - [License](#license)
